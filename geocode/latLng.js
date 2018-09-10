@@ -9,7 +9,7 @@ var getLatLng = (address, callback) => {
       console.log('unable to connect to api servers..');
     }else if(!body.results[0].locations[0]){
       console.log('unable to retrieve address..\n\nTry entering valid address!\n');
-    }else{
+    }else {
       return  callback([body.results[0].locations[0].latLng.lat, body.results[0].locations[0].latLng.lng]);
     }
   });
