@@ -14,8 +14,8 @@ const argv = yargs
 .alias('help','h')
 .argv;
 
-// var latLng = geocode.getLatLng(argv.a, (latLng)=>{
-//    console.log(`Latitude: ${latLng[0]}\nLongitude: ${latLng[1]}`);
-// });//returns [Latitude, Longitude] & handles errors
+var latLng = geocode.getLatLng(argv.a, (latLng)=>{
+   console.log(`Latitude: ${latLng[0]}\nLongitude: ${latLng[1]}`);
+});//returns [Latitude, Longitude] & handles errors
 
 weather.getWeather();

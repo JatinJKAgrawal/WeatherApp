@@ -10,7 +10,8 @@ var getLatLng = (address, callback) => {
     }else if(!body.results[0].locations[0]){
       console.log('unable to retrieve address..\n\nTry entering valid address!\n');
     }else {
-      return  callback([body.results[0].locations[0].latLng.lat, body.results[0].locations[0].latLng.lng]);
+      return  callback([body.results[0].locations[0].latLng.lat, body.results[0].locations[0].latLng.lng
+      ]);
     }
   });
 }
